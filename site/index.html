@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Basic Demo Site</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about.html">About</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <header>
+                <h1>Home Page</h1>
+            </header>
+            <article>
+                <section>
+                    <p id="joke"></p>
+                    <p>Joke retrived via <a href="/jokes/fetch-joke" title="/jokes/fetch-joke">/jokes/fetch-joke</a> which uses a <a href="https://docs.netlify.com/routing/redirects/rewrites-proxies/" title="Rewrites and proxies | Netlify Docs"><code>rewrite</code></a></p>
+                </section>
+
+                <section>
+                    <p>Leberkas corned alcatra chop sirloin round porchetta bacon leberkas cupim tenderloin sausage filet ham. Ball bresaola andouille frankfurter swine bacon frankfurter alcatra hamburger jowl. Pancetta prosciutto ham cow buffalo salami pastrami cow tenderloin. Bone corned jerky drumstick ribeye andouille kielbasa belly burgdoggen sausage bone loin chicken. Pancetta ground boudin prosciutto filet cow porchetta meatball swine flank.</p>
+                </section>
+
+            </article>
+        </main>
+
+        <footer>
+            <a href="https://github.com/coelmay/netlify-bare" title="@coelmay/netlify-bare">@coelmay/netlify-bare</a>
+        </footer>
+        <script>
+            (function() {
+                fetch('/jokes/fetch-joke')
+					.then((res) => res.json())
+					.then((data) => {
+						// console.log(data)
+						document.getElementById('joke').innerHTML = data.joke;
+					})
+					.catch((err) => {
+						document.getElementById('joke').innerHTML = "Error retrieving joke!";
+					});
+            })();
+        </script>
+    </body>
+</html>

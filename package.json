@@ -1,0 +1,9 @@
+{
+  "name": "netlify-bare",
+  "version": "1.0.0",
+  "private": true,
+  "license": "0BSD",
+  "dependencies": {
+    "node-fetch": "^3.2.3"
+  }
+}
