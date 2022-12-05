@@ -1,17 +1,60 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 body {
-    font-size: 4vmin;
+    /* 
+    Computed using
+    https://css-tricks.com/linearly-scale-font-size-with-css-clamp-based-on-the-viewport/ and
+    https://codebeautify.org/point-to-rem-converter
+    */
+    font-size: clamp(0.8331rem, 0.5827rem + 1.1127vw, 1.1669rem);
     font-family: 'Roboto', sans-serif;
+    max-width: 960px;
+    margin: auto
 }
 
-.social {
+.title {
+    text-align:center;
+}
+
+ul {
+    list-style-type: square;
+}
+
+li {
+    margin: .5em 0;
+}
+
+.description{
+    clear:left
+}
+
+.social{
+    max-width: 576px;
+    margin:auto;
+}
+
+.social ul{
     list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: nowrap;
 }
 
-img.icon{
-    width: 32px;
-    height: auto;
+.social li{
+    float: left;
+    margin: auto
+}
+
+.pic{
+    float: right;
+    margin: .5em;
+}
+
+img.icon {
+    width: 2em;
+    height: 2em;
 }
 
 a.icon:link{text-decoration: none; color: #0000EE}

@@ -1,13 +1,3 @@
-# netlify-bare
+# Gabriel Matos' website
 
-This is a basic repository one can use to drag and drop to [Netlify](https://netlify.com).
-
-Simple two page site, with favicon, simple styles, headers and redirects, and a contact form.
-
-Download, edit, then check out [Netlify Tutorial – Deploying from Git](https://youtu.be/4h8B080Mv4U). Simple!
-
-## Other Options
-
-A simple HTML and CSS example for *drag and drop* [coelmay/netlify-drop-example](https://github.com/coelmay/netlify-drop-example)
-
-And a bare-bones `create-react-app` example [coelmay/netlify-react-bare](https://github.com/coelmay/netlify-react-bare)
+My personal website. Based on a simple [Netlify](https://www.netlify.com/) template which used to reside [here](https://github.com/coelmay/netlify-bare) but has since been deleted by [its creator](https://github.com/coelmay).
