@@ -6,7 +6,7 @@ body {
     https://css-tricks.com/linearly-scale-font-size-with-css-clamp-based-on-the-viewport/ and
     https://codebeautify.org/point-to-rem-converter
     */
-    font-size: clamp(0.8331rem, 0.5827rem + 1.1127vw, 1.1669rem);
+    /* font-size: clamp(0.8331rem, 0.5827rem + 1.1127vw, 1.1669rem); */
     font-family: 'Roboto', sans-serif;
     max-width: 960px;
     margin: auto
@@ -34,28 +34,27 @@ li {
 }
 
 .social ul{
-    list-style-type: none;
+    list-style: none;
+    margin: 0;
     padding: 0;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: nowrap;
 }
 
 .social li{
-    float: left;
-    margin: auto
+    margin: auto;
+    width: 32px;
+    flex-shrink: 0;
 }
 
 .pic{
     float: right;
+    width: clamp(6rem, 6rem + 20vw, 15rem);
     margin: .5em;
 }
 
-img.icon {
-    width: 2em;
-    height: 2em;
-}
 
 a.icon:link{text-decoration: none; color: #0000EE}
 a.icon:hover{text-decoration: none; color: #0000EE}
