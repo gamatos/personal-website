@@ -9,7 +9,8 @@ body {
     /* font-size: clamp(0.8331rem, 0.5827rem + 1.1127vw, 1.1669rem); */
     font-family: 'Roboto', sans-serif;
     max-width: 960px;
-    margin: auto
+    margin: auto;
+    padding: 10px
 }
 
 .title {
