@@ -31,6 +31,7 @@ li {
 
 .social{
     max-width: 576px;
+    padding-bottom: 10px;
     margin:auto;
 }
 
@@ -61,3 +62,7 @@ a.icon:link{text-decoration: none; color: #0000EE}
 a.icon:hover{text-decoration: none; color: #0000EE}
 a.icon:visited{text-decoration: none; color:#0000EE}
 a.icon:active{text-decoration: none; color: #0000EE}
+
+ul.presentation .title{
+    text-align:left
+}
